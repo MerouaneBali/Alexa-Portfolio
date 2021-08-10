@@ -408,7 +408,9 @@ nav {
   .container {
     display: flex;
     flex-direction: row;
+    align-items: center;
     width: 100%;
+    margin-top: 100px;
 
     .details {
       flex: 1;
