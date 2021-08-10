@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/js/Splide/splide.min.css" />
+    <link rel="stylesheet" href="assets/js/Splide/splide-sea-green.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Alexa</title>
+  </head>
+  <body>
+    <nav>
+      <p>Alexa</p>
+      <ul>
+        <li data-selected-section>Home</li>
+        <li>About</li>
+        <li>Skills</li>
+        <li>Services</li>
+        <li>Portfolio</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+
+    <section id="hero">
+      <ul id="hero-social">
+        <li><img src="assets/svg/dribbble.svg" alt="DRIBBBLE" srcset="" /></li>
+        <li>
+          <img src="assets/svg/linkedin-alt.svg" alt="LINKEDIN" srcset="" />
+        </li>
+        <li><img src="assets/svg/github-alt.svg" alt="GITHUB" srcset="" /></li>
+      </ul>
+
+      <div id="hero-main-content">
+        <summary>
+          <h1>Hi, I'm Alexa</h1>
+          <hr />
+          <p>a frontend developer</p>
+          <hr />
+          <p>
+            High level experience in web design and development knowledge,
+            producing quality work.
+          </p>
+          <hr />
+          <button onclick="learnMore()">
+            learn more
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M15.54,11.29,9.88,5.64a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41l4.95,5L8.46,17a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.3,1,1,0,0,0,.71-.3l5.66-5.65A1,1,0,0,0,15.54,11.29Z"
+              />
+            </svg>
+            <!-- <img src="assets/svg/angle-right-b.svg" alt="" srcset="" /> -->
+          </button>
+        </summary>
+
+        <svg
+          viewBox="0 0 200 187"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <mask id="mask0" mask-type="alpha">
+            <path
+              d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+            />
+          </mask>
+          <g mask="url(#mask0)">
+            <path
+              d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+            />
+            <image href="assets/img/hero.png" />
+          </g>
+        </svg>
+      </div>
+
+      <div id="hero-scroll-more">
+        <p>Scroll</p>
+        <img src="assets/svg/mouse-alt.svg" alt="" srcset="" />
+        <p>More</p>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section-heading">
+        <h1>About me</h1>
+        <p>Introduction</p>
+      </div>
+      <article>
+        <div id="image"></div>
+
+        <div id="biography">
+          <p>
+            Hello, my name is Alexa! <br />
+            I'm web developer, with extensive knowledge and years of experience,
+            working in web technologies and Ui / Ux design, delivering quality
+            work. Web developer, with extensive knowledge and years of
+            experience, working in web technologies and Ui / Ux design,
+            delivering quality work. Web developer, with extensive knowledge and
+            years of experience, working in web technologies and Ui / Ux design,
+            delivering quality work.
+          </p>
+
+          <div id="experience">
+            <div>
+              <p>03+</p>
+              <p>Years experience</p>
+            </div>
+            <div>
+              <p>20+</p>
+              <p>Complete projects</p>
+            </div>
+            <div>
+              <p>03+</p>
+              <p>Times employed</p>
+            </div>
+          </div>
+
+          <button class="btn-primary">
+            download resume
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M20,8.94a1.31,1.31,0,0,0-.06-.27l0-.09a1.07,1.07,0,0,0-.19-.28h0l-6-6h0a1.07,1.07,0,0,0-.28-.19l-.1,0A1.1,1.1,0,0,0,13.06,2H7A3,3,0,0,0,4,5V19a3,3,0,0,0,3,3H17a3,3,0,0,0,3-3V9S20,9,20,8.94ZM14,5.41,16.59,8H15a1,1,0,0,1-1-1ZM18,19a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V5A1,1,0,0,1,7,4h5V7a3,3,0,0,0,3,3h3Zm-4.71-4.71-.29.3V12a1,1,0,0,0-2,0v2.59l-.29-.3a1,1,0,0,0-1.42,1.42l2,2a1,1,0,0,0,.33.21.94.94,0,0,0,.76,0,1,1,0,0,0,.33-.21l2-2a1,1,0,0,0-1.42-1.42Z"
+              />
+            </svg>
+          </button>
+        </div>
+      </article>
+    </section>
+
+    <section id="skills">
+      <div class="section-heading">
+        <h1>Skills</h1>
+        <p>My technical level</p>
+      </div>
+
+      <div class="container">
+        <div class="details">
+          <div>
+            <p>HTML5</p>
+            <div class="progress-bar-container">
+              <div class="progress-bar" style="width: 90%"></div>
+            </div>
+          </div>
+          <hr />
+          <div>
+            <p>CSS3</p>
+            <div class="progress-bar-container">
+              <div class="progress-bar" style="width: 80%"></div>
+            </div>
+          </div>
+          <hr />
+          <div>
+            <p>JavaScript</p>
+            <div class="progress-bar-container">
+              <div class="progress-bar" style="width: 70%"></div>
+            </div>
+          </div>
+          <hr />
+          <div>
+            <p>React</p>
+            <div class="progress-bar-container">
+              <div class="progress-bar" style="width: 80%"></div>
+            </div>
+          </div>
+          <hr />
+          <div>
+            <p>Git</p>
+            <div class="progress-bar-container">
+              <div class="progress-bar" style="width: 40%"></div>
+            </div>
+          </div>
+        </div>
+        <svg
+          width="1180"
+          height="808"
+          viewBox="0 0 1180 808"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M652.5 358C652.5 358 803.5 388.5 843 239.5C882.5 90.5 995.625 50.2842 995.625 50.2842"
+            stroke="#6E57E0"
+            stroke-width="4"
+            stroke-dasharray="8 8"
+          />
+          <path
+            d="M100.568 86.3214C100.568 86.3214 320.5 66 347.5 173.5C374.5 281 435.491 353.625 501 356"
+            stroke="#6E57E0"
+            stroke-width="4"
+            stroke-dasharray="8 8"
+          />
+          <path
+            d="M656.5 476C731 555 805.384 526.307 768.928 664.588C732.472 802.869 967.969 801.612 1079.43 761.804"
+            stroke="#6E57E0"
+            stroke-width="4"
+            stroke-dasharray="8 8"
+          />
+          <path
+            d="M526.307 465.128C424.482 501.165 365.398 546.421 383.417 682.607C401.435 818.793 202.394 771.023 122.777 741.69"
+            stroke="#6E57E0"
+            stroke-width="4"
+            stroke-dasharray="8 8"
+          />
+          <circle
+            cx="590"
+            cy="411.733"
+            r="104.5"
+            fill="#6E57E0"
+            stroke="#6E57E0"
+          />
+          <path
+            d="M1037.04 88.396L1075.16 75.7422L1087.81 12.5712H1016.4L1013.69 26.6664H1070.91L1069.13 35.6658H1011.82L1009.01 49.7611H1066.25L1063.1 65.8952L1040.01 73.4496L1020.05 65.8952L1021.42 58.8476H1007.32L1004.01 75.7422L1037.04 88.396Z"
+            fill="#6E57E0"
+          />
+          <path
+            d="M1140.1 769.694C1136.95 770.001 1133.78 769.423 1130.94 768.025C1130.29 767.51 1129.76 766.869 1129.37 766.141C1128.99 765.413 1128.76 764.614 1128.69 763.792C1128.69 763.669 1128.66 763.548 1128.62 763.435C1128.57 763.322 1128.5 763.22 1128.41 763.134C1128.32 763.049 1128.22 762.981 1128.1 762.937C1127.99 762.892 1127.86 762.87 1127.74 762.873C1126.42 762.856 1125.09 762.86 1123.76 762.871C1123.53 762.847 1123.3 762.916 1123.12 763.062C1122.94 763.208 1122.82 763.42 1122.79 763.651C1122.72 765.093 1122.96 766.533 1123.51 767.869C1124.05 769.205 1124.89 770.404 1125.95 771.381C1128.63 773.474 1131.89 774.699 1135.29 774.893C1138.83 775.304 1142.41 775.151 1145.9 774.442C1148.58 773.942 1151.04 772.617 1152.93 770.652C1153.98 769.363 1154.68 767.828 1154.97 766.193C1155.26 764.558 1155.13 762.876 1154.59 761.305C1154.14 760.197 1153.44 759.208 1152.55 758.413C1151.65 757.618 1150.59 757.038 1149.44 756.718C1144.07 754.835 1138.27 754.978 1132.8 753.547C1131.85 753.248 1130.69 752.923 1130.27 751.917C1130.02 751.21 1130.01 750.443 1130.22 749.726C1130.43 749.008 1130.87 748.375 1131.46 747.917C1133.18 746.935 1135.13 746.448 1137.11 746.509C1139.79 746.257 1142.5 746.644 1145 747.639C1145.76 748.082 1146.4 748.683 1146.9 749.401C1147.4 750.119 1147.73 750.936 1147.88 751.797C1147.89 752.051 1147.99 752.293 1148.17 752.475C1148.34 752.658 1148.58 752.768 1148.84 752.784C1150.15 752.811 1151.47 752.791 1152.79 752.793C1153.02 752.82 1153.25 752.764 1153.44 752.635C1153.63 752.506 1153.76 752.313 1153.82 752.09C1153.84 750.314 1153.38 748.565 1152.51 747.017C1151.64 745.469 1150.38 744.176 1148.85 743.266C1144.64 741.322 1139.97 740.607 1135.37 741.202V741.202C1132 741.34 1128.78 742.634 1126.25 744.866C1125.09 746.117 1124.3 747.669 1123.98 749.345C1123.66 751.022 1123.81 752.755 1124.43 754.347C1124.91 755.414 1125.61 756.364 1126.49 757.132C1127.37 757.9 1128.41 758.468 1129.53 758.796C1134.88 760.728 1140.74 760.108 1146.14 761.817C1147.2 762.174 1148.42 762.72 1148.75 763.891C1148.92 764.593 1148.91 765.328 1148.71 766.024C1148.51 766.719 1148.13 767.351 1147.62 767.856C1145.37 769.251 1142.74 769.895 1140.1 769.694ZM1164.48 734.305C1154.04 728.399 1143.59 722.499 1133.15 716.604C1132.1 716.018 1130.92 715.71 1129.72 715.71C1128.51 715.71 1127.33 716.018 1126.29 716.604C1115.88 722.481 1105.47 728.358 1095.06 734.235C1094.05 734.787 1093.2 735.599 1092.61 736.589C1092.02 737.578 1091.7 738.708 1091.69 739.861V775.371C1091.71 776.545 1092.04 777.693 1092.66 778.693C1093.27 779.692 1094.15 780.506 1095.19 781.049C1098.18 782.676 1101.09 784.469 1104.13 785.989C1105.89 786.928 1107.84 787.445 1109.83 787.5C1111.82 787.555 1113.8 787.145 1115.6 786.304C1116.96 785.458 1118.05 784.264 1118.79 782.848C1119.52 781.432 1119.86 779.846 1119.77 778.254C1119.8 766.535 1119.78 754.815 1119.78 743.096C1119.8 742.968 1119.8 742.837 1119.76 742.711C1119.73 742.586 1119.67 742.469 1119.59 742.369C1119.5 742.268 1119.4 742.186 1119.29 742.128C1119.17 742.07 1119.04 742.036 1118.91 742.031C1117.58 742.009 1116.25 742.018 1114.92 742.027C1114.8 742.016 1114.67 742.031 1114.56 742.071C1114.44 742.112 1114.33 742.176 1114.24 742.261C1114.15 742.345 1114.08 742.448 1114.03 742.562C1113.99 742.676 1113.96 742.799 1113.97 742.923C1113.95 754.566 1113.97 766.214 1113.96 777.859C1113.96 778.663 1113.72 779.449 1113.26 780.111C1112.8 780.773 1112.16 781.279 1111.4 781.562C1110.54 781.819 1109.63 781.889 1108.73 781.769C1107.84 781.649 1106.98 781.342 1106.21 780.867C1103.44 779.303 1100.67 777.738 1097.9 776.174C1097.71 776.087 1097.56 775.946 1097.46 775.77C1097.36 775.594 1097.32 775.391 1097.33 775.188C1097.33 763.473 1097.33 751.758 1097.33 740.043C1097.31 739.815 1097.37 739.587 1097.49 739.391C1097.6 739.195 1097.78 739.042 1097.99 738.953C1108.36 733.11 1118.74 727.262 1129.11 721.407C1129.29 721.284 1129.5 721.218 1129.72 721.219C1129.94 721.219 1130.15 721.285 1130.33 721.409C1140.7 727.253 1151.07 733.099 1161.45 738.948C1161.65 739.039 1161.83 739.194 1161.95 739.391C1162.07 739.587 1162.12 739.815 1162.1 740.043C1162.1 751.757 1162.1 763.471 1162.1 775.187C1162.11 775.39 1162.07 775.594 1161.97 775.772C1161.87 775.95 1161.72 776.094 1161.54 776.185C1151.32 781.961 1141.1 787.729 1130.88 793.488C1130.39 793.76 1129.81 794.198 1129.24 793.868C1126.56 792.352 1123.92 790.777 1121.25 789.247C1121.11 789.143 1120.95 789.082 1120.78 789.071C1120.6 789.061 1120.43 789.102 1120.29 789.189C1119.11 789.878 1117.87 790.456 1116.59 790.914C1116.01 791.148 1115.3 791.215 1114.9 791.752C1115.41 792.304 1116.02 792.747 1116.71 793.053C1119.83 794.861 1122.95 796.667 1126.08 798.471C1127.11 799.12 1128.3 799.48 1129.52 799.514C1130.74 799.548 1131.95 799.254 1133.01 798.664C1143.42 792.794 1153.83 786.922 1164.24 781.048C1165.28 780.504 1166.16 779.69 1166.77 778.691C1167.39 777.692 1167.72 776.545 1167.74 775.371V739.861C1167.73 738.731 1167.43 737.622 1166.86 736.647C1166.28 735.672 1165.47 734.864 1164.48 734.305H1164.48Z"
+            fill="#6E57E0"
+          />
+          <path
+            d="M69.1514 734.307C67.8696 735.047 66.836 736.15 66.1813 737.478C65.5267 738.805 65.2804 740.297 65.4736 741.764C65.6668 743.232 66.2908 744.609 67.2668 745.722C68.2427 746.835 69.5267 747.633 70.9565 748.016C72.3862 748.399 73.8974 748.35 75.299 747.874C76.7006 747.398 77.9296 746.517 78.8306 745.343C79.7316 744.169 80.2641 742.754 80.3609 741.277C80.4576 739.8 80.1142 738.327 79.3741 737.045C78.3815 735.327 76.747 734.073 74.8299 733.559C72.9128 733.045 70.8703 733.314 69.1514 734.307ZM102.694 742.426C102.203 741.865 101.684 741.302 101.139 740.737C101.52 740.337 101.888 739.936 102.245 739.537C108.974 731.976 111.814 724.394 109.182 719.835C106.659 715.465 99.153 714.163 89.7561 715.99C88.8306 716.171 87.9101 716.375 86.9947 716.602C86.8195 715.998 86.6331 715.398 86.4356 714.801C83.2477 705.194 78.0982 698.945 72.835 698.949C67.7881 698.951 62.9103 704.803 59.7986 713.856C59.4924 714.749 59.2092 715.649 58.9489 716.557C58.3369 716.407 57.7224 716.269 57.1052 716.141C47.1909 714.106 39.2054 715.446 36.5791 720.007C34.0607 724.381 36.6944 731.53 42.984 738.747C43.6078 739.461 44.2493 740.159 44.9083 740.841C44.1314 741.642 43.3956 742.441 42.7099 743.237C36.5727 750.352 34.0895 757.384 36.6039 761.739C39.2006 766.237 47.0736 767.707 56.6563 765.822C57.4329 765.668 58.2052 765.495 58.9733 765.302C59.2546 766.284 59.5632 767.258 59.8991 768.223C62.9971 777.094 67.8476 782.758 72.8766 782.756C78.0703 782.753 83.2768 776.668 86.4313 767.424C86.6804 766.694 86.9162 765.935 87.1397 765.154C88.1318 765.401 89.1303 765.62 90.1352 765.811C99.368 767.558 106.698 766.184 109.207 761.826C111.799 757.325 109.127 749.775 102.694 742.426H102.694ZM39.6816 721.794C41.2984 718.986 47.8244 717.891 56.3846 719.648C56.9317 719.761 57.4881 719.887 58.0539 720.025C57.2182 723.722 56.6285 727.471 56.2887 731.246C53.2 733.419 50.2552 735.789 47.4727 738.343C46.8597 737.709 46.263 737.059 45.6827 736.394L45.6829 736.395C40.2938 730.211 38.1639 724.429 39.6816 721.794ZM55.968 745.796C53.8286 744.176 51.8403 742.517 50.0357 740.848C51.839 739.189 53.8286 737.535 55.9636 735.919C55.8869 737.565 55.8489 739.212 55.8496 740.86C55.8507 742.506 55.8902 744.152 55.968 745.796ZM55.9654 762.309C52.3335 763.117 48.584 763.249 44.9041 762.699C43.8954 762.621 42.9135 762.336 42.019 761.863C41.1246 761.39 40.3367 760.739 39.7039 759.949C38.1784 757.306 40.1722 751.661 45.4209 745.575C46.0808 744.813 46.7623 744.07 47.4654 743.347C50.2483 745.914 53.1979 748.294 56.295 750.471C56.6394 754.294 57.236 758.091 58.0809 761.835C57.3798 762.01 56.6746 762.168 55.9654 762.309ZM85.7216 728.621C84.3162 727.736 82.8934 726.879 81.4533 726.05C80.0361 725.234 78.6019 724.449 77.1506 723.695C79.6355 722.65 82.0781 721.758 84.4361 721.03C84.992 723.537 85.4211 726.071 85.7216 728.621ZM63.1844 715.02C65.8504 707.263 69.7952 702.53 72.8369 702.529C76.0764 702.527 80.2854 707.634 83.0376 715.928C83.2164 716.469 83.3854 717.012 83.5446 717.559C79.9288 718.681 76.3912 720.04 72.955 721.629C69.533 720.022 66.0065 718.647 62.3995 717.514C62.6406 716.676 62.9022 715.845 63.1844 715.02ZM61.5067 720.986C63.9663 721.76 66.3854 722.658 68.7546 723.676C65.819 725.191 62.9593 726.841 60.1755 728.626C60.5118 725.953 60.9593 723.392 61.5067 720.986ZM60.1816 753.087C61.5698 753.975 62.9784 754.831 64.4072 755.654C65.8648 756.493 67.3417 757.297 68.838 758.066C66.4507 759.119 64.0108 760.049 61.5281 760.852C60.9744 758.413 60.522 755.807 60.1816 753.087ZM83.0428 766.267C81.928 769.817 80.1694 773.131 77.8548 776.044L77.8545 776.045C77.2825 776.879 76.5455 777.587 75.689 778.126C74.8324 778.664 73.8746 779.021 72.8747 779.175C69.8232 779.177 65.9285 774.628 63.2791 767.042C62.9671 766.145 62.6801 765.24 62.418 764.327C66.0422 763.157 69.583 761.744 73.0161 760.096C76.4806 761.695 80.0464 763.064 83.6904 764.196C83.4914 764.891 83.2755 765.582 83.0428 766.267ZM84.5607 760.718C82.1755 759.981 79.6975 759.074 77.1767 758.014C78.5977 757.266 80.029 756.476 81.4706 755.644C82.95 754.79 84.3916 753.914 85.7955 753.017C85.5159 755.604 85.1037 758.174 84.5607 760.719V760.718ZM86.4308 740.845C86.4339 743.39 86.3544 745.933 86.1924 748.473C84.1279 749.87 81.9484 751.235 79.6807 752.544C77.4223 753.848 75.1847 755.046 72.9898 756.13C70.68 755.023 68.4148 753.831 66.194 752.552C63.9858 751.281 61.8282 749.927 59.7213 748.491C59.5287 745.951 59.4317 743.407 59.4303 740.858L59.4308 740.859C59.429 738.311 59.5239 735.766 59.7154 733.224C61.7794 731.815 63.9431 730.452 66.1802 729.16C68.4276 727.862 70.6932 726.669 72.9463 725.588C75.2277 726.697 77.4678 727.885 79.6669 729.152C81.8736 730.421 84.0372 731.76 86.1577 733.17C86.3398 735.724 86.431 738.283 86.4311 740.845H86.4308ZM90.4398 719.504C98.4908 717.938 104.561 718.992 106.082 721.626C107.702 724.431 105.38 730.628 99.5709 737.156L99.5707 737.157C99.2497 737.517 98.9167 737.878 98.5716 738.242C95.741 735.683 92.7394 733.32 89.5877 731.169C89.2697 727.435 88.7021 723.727 87.8887 720.069C88.7556 719.856 89.606 719.667 90.4398 719.504ZM89.8956 735.782C92.0215 737.335 94.0654 738.996 96.0192 740.76C94.0741 742.553 92.0366 744.243 89.915 745.823C89.98 744.164 90.0119 742.504 90.0109 740.843C90.0101 739.156 89.9717 737.469 89.8956 735.782ZM106.104 760.039C104.581 762.684 98.6962 763.787 90.8002 762.293C89.8953 762.122 88.9668 761.919 88.0147 761.683C88.8084 757.978 89.3509 754.224 89.6383 750.446C92.7847 748.257 95.7768 745.855 98.5934 743.256C99.0863 743.768 99.5551 744.277 99.9998 744.784V744.784C102.518 747.523 104.511 750.702 105.879 754.162C106.317 755.074 106.562 756.066 106.601 757.077C106.64 758.088 106.471 759.096 106.104 760.039Z"
+            fill="#6E57E0"
+          />
+          <path
+            d="M13.3362 42.7416L20.0613 118.171L50.2393 126.548L80.5008 118.159L87.2329 42.7416H13.3362ZM72.5985 67.4113H37.1974L38.0429 76.8845H71.7566L69.2176 105.287L50.2846 110.534V110.536L50.242 110.547L31.2917 105.287L29.9958 90.7613H39.2824L39.9411 98.1394L50.244 100.921L50.2524 100.919V100.919L60.5703 98.1336L61.6444 86.1357H29.5823L27.0872 58.1602H73.4266L72.5985 67.4113Z"
+            fill="#6E57E0"
+          />
+          <path
+            d="M575.68 412.84C576.054 413.211 576.497 413.504 576.984 413.703C577.472 413.902 577.994 414.003 578.52 414C579.046 414.003 579.568 413.902 580.056 413.703C580.543 413.504 580.986 413.211 581.36 412.84L587.36 406.84C587.735 406.468 588.033 406.026 588.236 405.538C588.439 405.051 588.543 404.528 588.543 404C588.543 403.472 588.439 402.949 588.236 402.462C588.033 401.974 587.735 401.532 587.36 401.16L581.36 395.16C580.987 394.787 580.544 394.491 580.057 394.289C579.57 394.088 579.047 393.984 578.52 393.984C577.993 393.984 577.47 394.088 576.983 394.289C576.496 394.491 576.053 394.787 575.68 395.16C575.307 395.533 575.011 395.976 574.809 396.463C574.608 396.95 574.504 397.473 574.504 398C574.504 398.527 574.608 399.05 574.809 399.537C575.011 400.024 575.307 400.467 575.68 400.84L578.84 404L575.68 407.16C575.305 407.532 575.008 407.974 574.804 408.462C574.601 408.949 574.497 409.472 574.497 410C574.497 410.528 574.601 411.051 574.804 411.538C575.008 412.026 575.305 412.468 575.68 412.84ZM599.44 420.84C596.766 422.996 593.435 424.172 590 424.172C586.565 424.172 583.234 422.996 580.56 420.84C579.743 420.161 578.69 419.834 577.632 419.932C576.575 420.029 575.599 420.543 574.92 421.36C574.241 422.177 573.914 423.23 574.012 424.288C574.109 425.345 574.623 426.321 575.44 427C579.525 430.41 584.678 432.279 590 432.279C595.322 432.279 600.475 430.41 604.56 427C605.377 426.321 605.891 425.345 605.988 424.288C606.086 423.23 605.759 422.177 605.08 421.36C604.744 420.956 604.331 420.621 603.866 420.376C603.401 420.131 602.891 419.98 602.368 419.932C601.31 419.834 600.257 420.161 599.44 420.84ZM602 400C601.209 400 600.436 400.235 599.778 400.674C599.12 401.114 598.607 401.738 598.305 402.469C598.002 403.2 597.923 404.004 598.077 404.78C598.231 405.556 598.612 406.269 599.172 406.828C599.731 407.388 600.444 407.769 601.22 407.923C601.996 408.077 602.8 407.998 603.531 407.696C604.262 407.393 604.886 406.88 605.326 406.222C605.765 405.564 606 404.791 606 404C606 402.939 605.579 401.922 604.828 401.172C604.078 400.421 603.061 400 602 400ZM590 372C582.089 372 574.355 374.346 567.777 378.741C561.199 383.136 556.072 389.384 553.045 396.693C550.017 404.002 549.225 412.044 550.769 419.804C552.312 427.563 556.122 434.69 561.716 440.284C567.31 445.878 574.437 449.688 582.196 451.231C589.956 452.775 597.998 451.983 605.307 448.955C612.616 445.928 618.864 440.801 623.259 434.223C627.654 427.645 630 419.911 630 412C630 406.747 628.965 401.546 626.955 396.693C624.945 391.84 621.999 387.43 618.284 383.716C614.57 380.001 610.16 377.055 605.307 375.045C600.454 373.035 595.253 372 590 372ZM590 444C583.671 444 577.484 442.123 572.222 438.607C566.959 435.091 562.858 430.093 560.436 424.246C558.014 418.399 557.38 411.965 558.615 405.757C559.85 399.55 562.897 393.848 567.373 389.373C571.848 384.897 577.55 381.85 583.757 380.615C589.965 379.38 596.399 380.014 602.246 382.436C608.093 384.858 613.091 388.959 616.607 394.222C620.123 399.484 622 405.671 622 412C622 420.487 618.629 428.626 612.627 434.627C606.626 440.629 598.487 444 590 444Z"
+            fill="#FBFBFE"
+          />
+        </svg>
+      </div>
+    </section>
+
+    <!-- <section>
+      <section id="qualification">
+        <div class="section-heading">
+          <h1>Qualification</h1>
+          <p>My personal journey</p>
+        </div>
+      </section>
+    </section> -->
+
+    <section id="services">
+      <div class="section-heading">
+        <h1>Services</h1>
+        <p>What do I typically offer</p>
+      </div>
+
+      <div id="services-container">
+        <div class="service-card" onclick="openServiceCardModal()">
+          <img src="assets/svg/brackets-curly.svg" alt="" srcset="" />
+          <h3>Creating<br />Websites</h3>
+        </div>
+        <div class="service-card" onclick="openServiceCardModal()">
+          <img src="assets/svg/palette.svg" alt="" srcset="" />
+          <h3>UI/UX<br />Design</h3>
+        </div>
+        <div class="service-card" onclick="openServiceCardModal()">
+          <img src="assets/svg/telescope.svg" alt="" srcset="" />
+          <h3>Project<br />Consulting</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="section-heading">
+        <h1>Projects</h1>
+        <p>My works through out time</p>
+      </div>
+
+      <div class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide slide">
+              <img src="assets/img/about.jpg" alt="" srcset="" />
+              <div>
+                <h3>Some Website</h3>
+                <hr />
+                <p>
+                  Web developer, with extensive knowledge and years of
+                  experience, working in web technologies and Ui / Ux design,
+                  delivering quality work.
+                </p>
+                <hr />
+                <button>live demo</button>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <img src="assets/img/about.jpg" alt="" srcset="" />
+              <div>
+                <h3>Some Website</h3>
+                <hr />
+                <p>
+                  Web developer, with extensive knowledge and years of
+                  experience, working in web technologies and Ui / Ux design,
+                  delivering quality work.
+                </p>
+                <hr />
+                <button>live demo</button>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <img src="assets/img/about.jpg" alt="" srcset="" />
+              <div>
+                <h3>Some Website</h3>
+                <hr />
+                <p>
+                  Web developer, with extensive knowledge and years of
+                  experience, working in web technologies and Ui / Ux design,
+                  delivering quality work.
+                </p>
+                <hr />
+                <button>live demo</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <div class="section-heading">
+        <h1>Testimonials</h1>
+        <p>What my clients said</p>
+      </div>
+
+      <div id="testimonials__splide" class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="container">
+                <img src="assets/img/testimonial3.jpg" alt="" srcset="" />
+                <div class="info">
+                  <p>John Smith</p>
+                  <p>@CompanyX</p>
+                  <div class="rating">
+                    <img src="assets/svg/star.svg" alt="" srcset="" />
+                    <img src="assets/svg/star.svg" alt="" srcset="" />
+                    <img src="assets/svg/star.svg" alt="" srcset="" />
+                    <img src="assets/svg/star.svg" alt="" srcset="" />
+                    <img src="assets/svg/star.svg" alt="" srcset="" />
+                  </div>
+                </div>
+              </div>
+              <p class="comment">
+                Web developer, with extensive knowledge and years of experience,
+                working in web technologies and Ui / Ux design, delivering
+                quality work.
+              </p>
+            </li>
+            <li class="splide__slide">
+              <div class="container">
+                <img src="assets/img/testimonial3.jpg" alt="" srcset="" />
+                <div class="info">
+                  <p>John Smith</p>
+                  <p>@CompanyX</p>
+                  <div class="rating">
+                    <img src="assets/svg/star.svg" alt="" srcset="" />
+                    <img src="assets/svg/star.svg" alt="" srcset="" />
+                    <img src="assets/svg/star.svg" alt="" srcset="" />
+                    <img src="assets/svg/star.svg" alt="" srcset="" />
+                    <img src="assets/svg/star.svg" alt="" srcset="" />
+                  </div>
+                </div>
+              </div>
+              <p class="comment">
+                Web developer, with extensive knowledge and years of experience,
+                working in web technologies and Ui / Ux design, delivering
+                quality work.
+              </p>
+            </li>
+            <li class="splide__slide">
+              <div class="container">
+                <img src="assets/img/testimonial3.jpg" alt="" srcset="" />
+                <div class="info">
+                  <p>John Smith</p>
+                  <p>@CompanyX</p>
+                  <div class="rating">
+                    <img src="assets/svg/star.svg" alt="" srcset="" />
+                    <img src="assets/svg/star.svg" alt="" srcset="" />
+                    <img src="assets/svg/star.svg" alt="" srcset="" />
+                    <img src="assets/svg/star.svg" alt="" srcset="" />
+                    <img src="assets/svg/star.svg" alt="" srcset="" />
+                  </div>
+                </div>
+              </div>
+              <p class="comment">
+                Web developer, with extensive knowledge and years of experience,
+                working in web technologies and Ui / Ux design, delivering
+                quality work.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div id="service-card-modal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="closeServiceCardModal()">&times;</span>
+        <p>Some text in the Modal..</p>
+      </div>
+    </div>
+
+    <div id="contact-modal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="header">
+          <h3>You have a new project?</h3>
+          <span class="close" onclick="closeContactModal()">&times;</span>
+        </div>
+        <p>
+          Reach me out on my email alexa.smith.official@gmail.com, or contact me
+          directly through this form:
+        </p>
+
+        <form action="" method="post">
+          <div>
+            <input type="text" name="name" placeholder="name" id="" />
+            <input type="email" name="email" placeholder="email" id="" />
+          </div>
+          <input type="text" name="message" placeholder="message" id="" />
+          <button onclick="closeContactModal()">
+            send message
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M20.34,9.32l-14-7a3,3,0,0,0-4.08,3.9l2.4,5.37h0a1.06,1.06,0,0,1,0,.82l-2.4,5.37A3,3,0,0,0,5,22a3.14,3.14,0,0,0,1.35-.32l14-7a3,3,0,0,0,0-5.36Zm-.89,3.57-14,7a1,1,0,0,1-1.35-1.3l2.39-5.37A2,2,0,0,0,6.57,13h6.89a1,1,0,0,0,0-2H6.57a2,2,0,0,0-.08-.22L4.1,5.41a1,1,0,0,1,1.35-1.3l14,7a1,1,0,0,1,0,1.78Z"
+              />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <p class="logo">Alexa<br /><span>alexa.smith.official@gmail.com</span></p>
+      <small>Copyrights © 2021</small>
+      <div>
+        <p>You have a project?</p>
+        <button onclick="openContactModal()">
+          Contact Me
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M20.34,9.32l-14-7a3,3,0,0,0-4.08,3.9l2.4,5.37h0a1.06,1.06,0,0,1,0,.82l-2.4,5.37A3,3,0,0,0,5,22a3.14,3.14,0,0,0,1.35-.32l14-7a3,3,0,0,0,0-5.36Zm-.89,3.57-14,7a1,1,0,0,1-1.35-1.3l2.39-5.37A2,2,0,0,0,6.57,13h6.89a1,1,0,0,0,0-2H6.57a2,2,0,0,0-.08-.22L4.1,5.41a1,1,0,0,1,1.35-1.3l14,7a1,1,0,0,1,0,1.78Z"
+            />
+          </svg>
+        </button>
+      </div>
+    </footer>
+  </body>
+  <script src="assets/js/Splide/splide.min.js"></script>
+  <script>
+    const learnMore = () => {
+      window.scrollTo(0, window.outerHeight - 100);
+    };
+
+    document.addEventListener("DOMContentLoaded", function () {
+      new Splide(".splide", {
+        height: "350px",
+        width: "70%",
+      }).mount();
+
+      new Splide("#testimonials__splide", {
+        width: "100%",
+        perPage: 3,
+        perMove: 1,
+        focus: "center",
+        gap: 30,
+        arrows: false,
+        typo: "loop",
+        autoplay: true,
+      }).mount();
+    });
+
+    function disableScroll() {
+      // Get the current page scroll position
+      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      (scrollLeft = window.pageXOffset || document.documentElement.scrollLeft),
+        // if any scroll is attempted, set this to the previous value
+        (window.onscroll = function () {
+          window.scrollTo(scrollLeft, scrollTop);
+        });
+    }
+
+    function enableScroll() {
+      window.onscroll = function () {};
+    }
+
+    // Get the modal
+    const modal = document.getElementById("service-card-modal");
+    const contactModal = document.getElementById("contact-modal");
+
+    // When the user clicks on the button, open the modal
+    const openServiceCardModal = () => {
+      modal.style.display = "block";
+      disableScroll();
+    };
+
+    // When the user clicks on <span> (x), close the modal
+    const closeServiceCardModal = () => {
+      modal.style.display = "none";
+      enableScroll();
+    };
+
+    const openContactModal = () => {
+      contactModal.style.display = "block";
+      disableScroll();
+    };
+
+    const closeContactModal = () => {
+      contactModal.style.display = "none";
+      enableScroll();
+    };
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal || event.target == contactModal) {
+        // modal.style.display = "none";
+        event.target.style.display = "none";
+        enableScroll();
+      }
+    };
+  </script>
+</html>
