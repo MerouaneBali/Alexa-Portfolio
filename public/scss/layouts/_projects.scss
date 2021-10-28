@@ -1,0 +1,58 @@
+@use "../base/colors" as *;
+
+#projects {
+  display: grid;
+  padding: 4em 0em !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.splide {
+  max-width: 1200px;
+}
+.splide__slide {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2em;
+  align-items: center;
+  padding: 4em 8em;
+
+  @media only screen and (max-width: 800px) {
+    padding: 0;
+    grid-template-columns: none;
+    grid-template-rows: auto auto;
+
+    * {
+      justify-content: center;
+      text-align: center;
+    }
+
+    img {
+      height: auto !important;
+      width: 100%;
+    }
+
+    div {
+      align-items: center !important;
+    }
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  img {
+    height: 350px;
+    border-radius: 20px;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    * + * {
+      margin-top: 2em;
+    }
+  }
+}

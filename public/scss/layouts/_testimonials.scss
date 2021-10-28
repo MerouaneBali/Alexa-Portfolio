@@ -1,0 +1,78 @@
+@use "../base/colors" as *;
+
+#testimonials {
+  //   margin: 100px 0;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media only screen and (max-width: 800px) {
+      flex-direction: column;
+
+      li {
+        padding-right: 0 !important;
+        padding-bottom: 2em;
+      }
+    }
+
+    li:not(:last-child) {
+      padding-right: 8em;
+    }
+
+    li {
+      .container {
+        display: flex;
+        flex-direction: row;
+
+        img {
+          height: 100px;
+          width: 100px;
+          object-fit: cover;
+          border-radius: 50px;
+          margin-right: 30px;
+        }
+
+        .info {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          p {
+            &:first-child {
+              // @include typo-subtitle;
+            }
+
+            &:nth-child(2) {
+              color: $primary;
+              margin: 10px 0;
+            }
+          }
+
+          .rating {
+            display: grid;
+            grid-template-columns: repeat(5, 24px);
+            column-gap: 10px;
+
+            img {
+              height: 24px;
+              width: 24px;
+            }
+          }
+        }
+      }
+
+      .comment {
+        color: $silver;
+        margin-top: 30px;
+      }
+    }
+
+    .is-active {
+      opacity: 1;
+    }
+  }
+}

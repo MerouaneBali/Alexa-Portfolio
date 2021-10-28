@@ -1,0 +1,68 @@
+@use "../base/colors" as *;
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2em 8em;
+  overflow: hidden;
+  display: flex;
+  background-color: $light;
+  z-index: 1;
+
+  a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.25rem;
+
+    &:hover {
+      color: $primary;
+    }
+
+    &:first-child {
+      flex: 1;
+      text-align: start;
+    }
+  }
+
+  .icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav a:not(:first-child) {
+    display: none;
+  }
+  nav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    display: block;
+    padding: 0em 2em;
+  }
+
+  nav.responsive {
+    outline: 2px solid $primary;
+
+    .icon {
+      position: absolute;
+      top: 0;
+      right: calc(3.625em - 2em);
+    }
+
+    a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+}

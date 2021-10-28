@@ -1,0 +1,22 @@
+@use "../base/colors" as *;
+
+.section-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8em;
+
+  @media only screen and (max-width: 800px) {
+    margin-bottom: 2em;
+  }
+
+  h1 {
+    // @include typo-h1();
+  }
+
+  p {
+    // @include typo-subtitle;
+    color: $silver;
+    margin-top: 10px;
+  }
+}

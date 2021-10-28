@@ -1,0 +1,57 @@
+@use "../base/colors" as *;
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $primary;
+  padding: 30px 130px;
+  transform: translateX(-8em);
+  width: calc(100% + 16em);
+
+  @media only screen and (max-width: 800px) {
+    display: grid;
+    row-gap: 2em;
+    justify-content: center;
+    text-align: center;
+    transform: translateX(-2em);
+    width: calc(100% + 4em);
+  }
+
+  p,
+  small {
+    color: $light;
+  }
+
+  p {
+    color: $light;
+
+    &:last-child {
+      justify-self: baseline;
+    }
+  }
+
+  .logo {
+    color: $light;
+
+    span {
+      color: $light;
+    }
+  }
+
+  div {
+    @media only screen and (max-width: 800px) {
+      display: grid;
+      justify-content: center;
+    }
+
+    button {
+      margin-top: 30px;
+
+      svg {
+        fill: $primary;
+      }
+    }
+  }
+}

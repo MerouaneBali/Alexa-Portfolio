@@ -1,0 +1,55 @@
+@use "./colors" as *;
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  transition: 0.3s;
+}
+
+body {
+  padding: 3.625em 8em 0 8em;
+  margin: 0;
+  color: $dark;
+  background-color: $light;
+  cursor: url("../../svg/cursor.svg") 12 12, auto;
+
+  @media only screen and (max-width: 800px) {
+    padding: 3.625em 2em 0 2em;
+  }
+}
+
+section + section {
+  padding: 5em 10em;
+
+  @media only screen and (max-width: 800px) {
+    padding: 0em;
+    margin: 2em auto;
+  }
+}
+
+p + p {
+  margin-top: 1.25em;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $silver;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $primary;
+}

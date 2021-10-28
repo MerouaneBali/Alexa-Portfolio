@@ -1,0 +1,70 @@
+@use "../base/colors" as *;
+
+#about {
+  display: flex;
+  flex-direction: column;
+
+  article {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    @media only screen and (max-width: 800px) {
+      display: block;
+      margin: 0;
+      text-align: center;
+
+      #image {
+        width: 100% !important;
+        margin: 2em 0;
+      }
+    }
+
+    img {
+      flex: 1;
+      height: 50%;
+      width: 50%;
+      border-radius: 20px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    #image {
+      flex: 1;
+      height: 481px;
+      border-radius: 20px;
+      background-color: $silver;
+      background-image: url("../../img/about.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    #biography {
+      flex: 1;
+      margin-left: 30px;
+
+      #experience {
+        display: flex;
+        flex-direction: row;
+        margin: 30px 0 30px 0;
+        text-align: center;
+
+        @media only screen and (max-width: 800px) {
+          flex-direction: column-reverse;
+        }
+
+        p {
+          &:first-child {
+            // @include typo-h3;
+          }
+
+          &:nth-child(2) {
+            margin: 0 30px 0 30px;
+          }
+        }
+      }
+    }
+  }
+}

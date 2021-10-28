@@ -4,34 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/js/Splide/splide.min.css" />
-    <link rel="stylesheet" href="assets/js/Splide/splide-sea-green.min.css" />
-    <link rel="stylesheet" href="style.css" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <title>Alexa</title>
   </head>
   <body>
     <nav>
-      <p>Alexa</p>
-      <ul>
-        <li data-selected-section>Home</li>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Services</li>
-        <li>Portfolio</li>
-        <li>Contact</li>
-      </ul>
+      <a>Alexa</a>
+      <a data-target-section="about">About</a>
+      <a data-target-section="skills">Skills</a>
+      <a data-target-section="projects">Projects</a>
+      <a data-target-section="testimonials">Testimonials</a>
+      <a data-target-section="contact">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
     </nav>
 
     <section id="hero">
-      <ul id="hero-social">
-        <li><img src="assets/svg/dribbble.svg" alt="DRIBBBLE" srcset="" /></li>
-        <li>
-          <img src="assets/svg/linkedin-alt.svg" alt="LINKEDIN" srcset="" />
-        </li>
-        <li><img src="assets/svg/github-alt.svg" alt="GITHUB" srcset="" /></li>
-      </ul>
+      <div id="hero__social">
+        <img src="svg/dribbble.svg" alt="DRIBBBLE" srcset="" />
+        <img src="svg/linkedin-alt.svg" alt="LINKEDIN" srcset="" />
+        <img src="svg/github-alt.svg" alt="GITHUB" srcset="" />
+      </div>
 
-      <div id="hero-main-content">
+      <div id="hero__main-content">
         <summary>
           <h1>Hi, I'm Alexa</h1>
           <hr />
@@ -42,18 +49,18 @@
             producing quality work.
           </p>
           <hr />
-          <button onclick="learnMore()">
+          <button class="btn--primary" onclick="learnMore()">
             learn more
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
               <path
                 d="M15.54,11.29,9.88,5.64a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41l4.95,5L8.46,17a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.3,1,1,0,0,0,.71-.3l5.66-5.65A1,1,0,0,0,15.54,11.29Z"
               />
             </svg>
-            <!-- <img src="assets/svg/angle-right-b.svg" alt="" srcset="" /> -->
           </button>
         </summary>
 
         <svg
+          id="hero__main-content__pfp"
           viewBox="0 0 200 187"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -73,14 +80,14 @@
                 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
             />
-            <image href="assets/img/hero.png" />
+            <image href="img/hero.png" />
           </g>
         </svg>
       </div>
 
-      <div id="hero-scroll-more">
+      <div id="hero__scroll-more">
         <p>Scroll</p>
-        <img src="assets/svg/mouse-alt.svg" alt="" srcset="" />
+        <img src="svg/mouse-alt.svg" alt="" srcset="" />
         <p>More</p>
       </div>
     </section>
@@ -107,20 +114,20 @@
 
           <div id="experience">
             <div>
-              <p>03+</p>
+              <h3>03+</h3>
               <p>Years experience</p>
             </div>
             <div>
-              <p>20+</p>
+              <h3>20+</h3>
               <p>Complete projects</p>
             </div>
             <div>
-              <p>03+</p>
+              <h3>03+</h3>
               <p>Times employed</p>
             </div>
           </div>
 
-          <button class="btn-primary">
+          <button class="btn--primary">
             download resume
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
               <path
@@ -237,38 +244,7 @@
       </div>
     </section>
 
-    <!-- <section>
-      <section id="qualification">
-        <div class="section-heading">
-          <h1>Qualification</h1>
-          <p>My personal journey</p>
-        </div>
-      </section>
-    </section> -->
-
-    <section id="services">
-      <div class="section-heading">
-        <h1>Services</h1>
-        <p>What do I typically offer</p>
-      </div>
-
-      <div id="services-container">
-        <div class="service-card" onclick="openServiceCardModal()">
-          <img src="assets/svg/brackets-curly.svg" alt="" srcset="" />
-          <h3>Creating<br />Websites</h3>
-        </div>
-        <div class="service-card" onclick="openServiceCardModal()">
-          <img src="assets/svg/palette.svg" alt="" srcset="" />
-          <h3>UI/UX<br />Design</h3>
-        </div>
-        <div class="service-card" onclick="openServiceCardModal()">
-          <img src="assets/svg/telescope.svg" alt="" srcset="" />
-          <h3>Project<br />Consulting</h3>
-        </div>
-      </div>
-    </section>
-
-    <section id="portfolio">
+    <section id="projects">
       <div class="section-heading">
         <h1>Projects</h1>
         <p>My works through out time</p>
@@ -277,46 +253,40 @@
       <div class="splide">
         <div class="splide__track">
           <ul class="splide__list">
-            <li class="splide__slide slide">
-              <img src="assets/img/about.jpg" alt="" srcset="" />
+            <li class="splide__slide">
+              <img src="img/about.jpg" alt="" srcset="" />
               <div>
                 <h3>Some Website</h3>
-                <hr />
                 <p>
                   Web developer, with extensive knowledge and years of
                   experience, working in web technologies and Ui / Ux design,
                   delivering quality work.
                 </p>
-                <hr />
-                <button>live demo</button>
+                <button class="btn--primary">live demo</button>
               </div>
             </li>
             <li class="splide__slide">
-              <img src="assets/img/about.jpg" alt="" srcset="" />
+              <img src="img/about.jpg" alt="" srcset="" />
               <div>
                 <h3>Some Website</h3>
-                <hr />
                 <p>
                   Web developer, with extensive knowledge and years of
                   experience, working in web technologies and Ui / Ux design,
                   delivering quality work.
                 </p>
-                <hr />
-                <button>live demo</button>
+                <button class="btn--primary">live demo</button>
               </div>
             </li>
             <li class="splide__slide">
-              <img src="assets/img/about.jpg" alt="" srcset="" />
+              <img src="img/about.jpg" alt="" srcset="" />
               <div>
                 <h3>Some Website</h3>
-                <hr />
                 <p>
                   Web developer, with extensive knowledge and years of
                   experience, working in web technologies and Ui / Ux design,
                   delivering quality work.
                 </p>
-                <hr />
-                <button>live demo</button>
+                <button class="btn--primary">live demo</button>
               </div>
             </li>
           </ul>
@@ -330,87 +300,74 @@
         <p>What my clients said</p>
       </div>
 
-      <div id="testimonials__splide" class="splide">
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide">
-              <div class="container">
-                <img src="assets/img/testimonial3.jpg" alt="" srcset="" />
-                <div class="info">
-                  <p>John Smith</p>
-                  <p>@CompanyX</p>
-                  <div class="rating">
-                    <img src="assets/svg/star.svg" alt="" srcset="" />
-                    <img src="assets/svg/star.svg" alt="" srcset="" />
-                    <img src="assets/svg/star.svg" alt="" srcset="" />
-                    <img src="assets/svg/star.svg" alt="" srcset="" />
-                    <img src="assets/svg/star.svg" alt="" srcset="" />
-                  </div>
-                </div>
+      <ul>
+        <li>
+          <div class="container">
+            <img src="img/testimonial3.jpg" alt="" srcset="" />
+            <div class="info">
+              <p>John Smith</p>
+              <p>@CompanyX</p>
+              <div class="rating">
+                <img src="svg/star.svg" alt="" srcset="" />
+                <img src="svg/star.svg" alt="" srcset="" />
+                <img src="svg/star.svg" alt="" srcset="" />
+                <img src="svg/star.svg" alt="" srcset="" />
+                <img src="svg/star.svg" alt="" srcset="" />
               </div>
-              <p class="comment">
-                Web developer, with extensive knowledge and years of experience,
-                working in web technologies and Ui / Ux design, delivering
-                quality work.
-              </p>
-            </li>
-            <li class="splide__slide">
-              <div class="container">
-                <img src="assets/img/testimonial3.jpg" alt="" srcset="" />
-                <div class="info">
-                  <p>John Smith</p>
-                  <p>@CompanyX</p>
-                  <div class="rating">
-                    <img src="assets/svg/star.svg" alt="" srcset="" />
-                    <img src="assets/svg/star.svg" alt="" srcset="" />
-                    <img src="assets/svg/star.svg" alt="" srcset="" />
-                    <img src="assets/svg/star.svg" alt="" srcset="" />
-                    <img src="assets/svg/star.svg" alt="" srcset="" />
-                  </div>
-                </div>
+            </div>
+          </div>
+          <p class="comment">
+            Web developer, with extensive knowledge and years of experience,
+            working in web technologies and Ui / Ux design, delivering quality
+            work.
+          </p>
+        </li>
+        <li>
+          <div class="container">
+            <img src="img/testimonial3.jpg" alt="" srcset="" />
+            <div class="info">
+              <p>John Smith</p>
+              <p>@CompanyX</p>
+              <div class="rating">
+                <img src="svg/star.svg" alt="" srcset="" />
+                <img src="svg/star.svg" alt="" srcset="" />
+                <img src="svg/star.svg" alt="" srcset="" />
+                <img src="svg/star.svg" alt="" srcset="" />
+                <img src="svg/star.svg" alt="" srcset="" />
               </div>
-              <p class="comment">
-                Web developer, with extensive knowledge and years of experience,
-                working in web technologies and Ui / Ux design, delivering
-                quality work.
-              </p>
-            </li>
-            <li class="splide__slide">
-              <div class="container">
-                <img src="assets/img/testimonial3.jpg" alt="" srcset="" />
-                <div class="info">
-                  <p>John Smith</p>
-                  <p>@CompanyX</p>
-                  <div class="rating">
-                    <img src="assets/svg/star.svg" alt="" srcset="" />
-                    <img src="assets/svg/star.svg" alt="" srcset="" />
-                    <img src="assets/svg/star.svg" alt="" srcset="" />
-                    <img src="assets/svg/star.svg" alt="" srcset="" />
-                    <img src="assets/svg/star.svg" alt="" srcset="" />
-                  </div>
-                </div>
+            </div>
+          </div>
+          <p class="comment">
+            Web developer, with extensive knowledge and years of experience,
+            working in web technologies and Ui / Ux design, delivering quality
+            work.
+          </p>
+        </li>
+        <li>
+          <div class="container">
+            <img src="img/testimonial3.jpg" alt="" srcset="" />
+            <div class="info">
+              <p>John Smith</p>
+              <p>@CompanyX</p>
+              <div class="rating">
+                <img src="svg/star.svg" alt="" srcset="" />
+                <img src="svg/star.svg" alt="" srcset="" />
+                <img src="svg/star.svg" alt="" srcset="" />
+                <img src="svg/star.svg" alt="" srcset="" />
+                <img src="svg/star.svg" alt="" srcset="" />
               </div>
-              <p class="comment">
-                Web developer, with extensive knowledge and years of experience,
-                working in web technologies and Ui / Ux design, delivering
-                quality work.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </div>
+            </div>
+          </div>
+          <p class="comment">
+            Web developer, with extensive knowledge and years of experience,
+            working in web technologies and Ui / Ux design, delivering quality
+            work.
+          </p>
+        </li>
+      </ul>
     </section>
 
-    <div id="service-card-modal" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close" onclick="closeServiceCardModal()">&times;</span>
-        <p>Some text in the Modal..</p>
-      </div>
-    </div>
-
     <div id="contact-modal" class="modal">
-      <!-- Modal content -->
       <div class="modal-content">
         <div class="header">
           <h3>You have a new project?</h3>
@@ -427,7 +384,7 @@
             <input type="email" name="email" placeholder="email" id="" />
           </div>
           <input type="text" name="message" placeholder="message" id="" />
-          <button onclick="closeContactModal()">
+          <button class="btn--primary" onclick="closeContactModal()">
             send message
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
               <path
@@ -439,12 +396,12 @@
       </div>
     </div>
 
-    <footer>
+    <footer id="contact">
       <p class="logo">Alexa<br /><span>alexa.smith.official@gmail.com</span></p>
       <small>Copyrights © 2021</small>
       <div>
         <p>You have a project?</p>
-        <button onclick="openContactModal()">
+        <button class="btn--secondary" onclick="openContactModal()">
           Contact Me
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path
@@ -455,77 +412,6 @@
       </div>
     </footer>
   </body>
-  <script src="assets/js/Splide/splide.min.js"></script>
-  <script>
-    const learnMore = () => {
-      window.scrollTo(0, window.outerHeight - 100);
-    };
-
-    document.addEventListener("DOMContentLoaded", function () {
-      new Splide(".splide", {
-        height: "350px",
-        width: "70%",
-      }).mount();
-
-      new Splide("#testimonials__splide", {
-        width: "100%",
-        perPage: 3,
-        perMove: 1,
-        focus: "center",
-        gap: 30,
-        arrows: false,
-        typo: "loop",
-        autoplay: true,
-      }).mount();
-    });
-
-    function disableScroll() {
-      // Get the current page scroll position
-      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      (scrollLeft = window.pageXOffset || document.documentElement.scrollLeft),
-        // if any scroll is attempted, set this to the previous value
-        (window.onscroll = function () {
-          window.scrollTo(scrollLeft, scrollTop);
-        });
-    }
-
-    function enableScroll() {
-      window.onscroll = function () {};
-    }
-
-    // Get the modal
-    const modal = document.getElementById("service-card-modal");
-    const contactModal = document.getElementById("contact-modal");
-
-    // When the user clicks on the button, open the modal
-    const openServiceCardModal = () => {
-      modal.style.display = "block";
-      disableScroll();
-    };
-
-    // When the user clicks on <span> (x), close the modal
-    const closeServiceCardModal = () => {
-      modal.style.display = "none";
-      enableScroll();
-    };
-
-    const openContactModal = () => {
-      contactModal.style.display = "block";
-      disableScroll();
-    };
-
-    const closeContactModal = () => {
-      contactModal.style.display = "none";
-      enableScroll();
-    };
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-      if (event.target == modal || event.target == contactModal) {
-        // modal.style.display = "none";
-        event.target.style.display = "none";
-        enableScroll();
-      }
-    };
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.1.9/dist/js/splide.min.js"></script>
+  <script src="js/main.js"></script>
 </html>
