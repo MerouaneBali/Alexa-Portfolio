@@ -54,6 +54,7 @@
       align-items: flex-start;
 
       * + * {
+        max-width: 60ch;
         margin-top: 2em;
       }
 
