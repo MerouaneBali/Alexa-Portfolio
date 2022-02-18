@@ -1,10 +1,10 @@
-# Easy Forms [Web App] (Beta)
+# Alexa's Portfolio
 
-Form handling API for developers who do not want build a whole back-end system for the sake of . [Live Demo](https://alexa-web-portfolio.netlify.app/).
+A simple static website. [Live Demo](https://alexa-web-portfolio.netlify.app/).
 
 ## Details
 
-[Alexa's portfolio](https://alexa-web-portfolio.netlify.app/) is a simple **static website** with a single page.
+[Alexa's portfolio](https://alexa-web-portfolio.netlify.app/) is a simple **single page** website built with HTML5, CSS3, SCSS, JavaScript, GSAP.
 
 Animated initally with CSS3 Keyframes, but reconstucted to animate with **GSAP** for a better control of the transitions.
 
