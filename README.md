@@ -12,6 +12,8 @@ Created that helped me get back on the web track after working on a **React Nati
 
 ![HOME](https://drive.google.com/uc?export=view&id=1QMj_yTqKboqsc38c4m61zf6YOO-BIZzU)
 
+![FIGMA](https://drive.google.com/uc?export=view&id=1OsXVZ5lWt5L7YpyFT6I_2RG0XTlV-YXK)
+
 ## Available Scripts
 
 In the project directory, you can run:
